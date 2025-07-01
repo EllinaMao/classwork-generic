@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployersList
+namespace EmployersList:IComparable<Employers>
 {
     /*
 Для хранения данных сотрудников используйте класс List<T>.
@@ -50,8 +50,21 @@ namespace EmployersList
             }
         }
 
-        public List<Employers> Search
+        public List<Employers> SearchBy(Func<Employers, bool> predicate)
+        {
+            return employers.Where(predicate).ToList();
+        }
 
+        //тут можно сделать меню что бы передавать нужный предикат и поменять каждый на приватный, но я не сделала это
+        //public MenuSearch()
+        //{
+        //    Console.WriteLine("");
+        //}
+
+        public List<Employers> SortBy(Func<Employers, object> keySelector)
+        {
+            return employers.OrderBy(keySelector).ToList();
+        }
 
     }
 }

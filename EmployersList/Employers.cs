@@ -16,7 +16,7 @@ namespace EmployersList
  Рабочий email
 
      */
-    internal struct Employers
+    internal struct Employers: IComparable<Employers>, IEquatable<Employers>
     {
         public string FullName{ get; set; }
         public string Position { get; set; }
@@ -36,5 +36,9 @@ namespace EmployersList
             Salary = salary;
             WorkEmail = new MailAddress(email);
         }
+        
+
+
+
     }
 }

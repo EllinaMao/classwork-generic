@@ -14,11 +14,11 @@ namespace Alfabet
 класса алфавита*/
     internal class EnglishAlphabet: IEnumerable<char>, IDisposable//интерфейсы которые входят в IEnumerable
     {
-        private readonly List<char> Letters;
+        private readonly SortedSet<char> Letters;
 
         public EnglishAlphabet()
         {
-            Letters = new List<char>();
+            Letters = new SortedSet<char>();
             for (char letter = 'A'; letter <= 'Z'; letter++)
             {
                 Letters.Add(letter);
@@ -28,19 +28,19 @@ namespace Alfabet
                 Letters.Add(letter);
             }
         }
-     
-           public IEnumerator<char> GetEnumerator()
+
+        public IEnumerator<char> GetEnumerator()
         {
-            for (int i = 0; i < Letters.Count; i++)
+            foreach (var letter in Letters)
             {
-                yield return Letters[i];
+                yield return letter;
             }
         }
+
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
         }
-
 
         protected virtual void Dispose(bool disposing)
         {
@@ -53,6 +53,5 @@ namespace Alfabet
             Dispose(disposing: true);
             GC.SuppressFinalize(this);
         }
-
     }
 }
