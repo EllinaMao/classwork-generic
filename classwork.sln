@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classwork", "classwork\clas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alfabet", "Alfabet\Alfabet.csproj", "{887142E0-3B6E-4696-9836-8132D6EAFFF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployersList", "EmployersList\EmployersList.csproj", "{3A118353-AAD6-45E4-9C1C-F87849BE54A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{887142E0-3B6E-4696-9836-8132D6EAFFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{887142E0-3B6E-4696-9836-8132D6EAFFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{887142E0-3B6E-4696-9836-8132D6EAFFF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A118353-AAD6-45E4-9C1C-F87849BE54A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A118353-AAD6-45E4-9C1C-F87849BE54A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A118353-AAD6-45E4-9C1C-F87849BE54A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A118353-AAD6-45E4-9C1C-F87849BE54A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
